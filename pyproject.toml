@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streammeta-v5"
+version = "5.0.2"
+description = "Deterministic prequential routing experiments with archival evidence"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "river==0.26.1", "xgboost-cpu==3.4.1", "shap==0.52.0",
+  "numpy==2.2.6", "pandas==2.2.3", "scipy==1.16.3", "scikit-learn==1.6.1",
+  "pyarrow==21.0.0", "matplotlib==3.10.0", "psutil==7.0.0", "PyYAML==6.0.2",
+  "threadpoolctl==3.6.0"
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+
+[project.scripts]
+streammeta = "streammeta.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
