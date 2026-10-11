@@ -1,0 +1,38 @@
+{
+  "dataset": "Agrawal",
+  "method": "Meta",
+  "stage": "primary",
+  "arm": "default",
+  "design": "principal",
+  "replicate": 0,
+  "resource_repeat": 0,
+  "n": null,
+  "window": 100,
+  "delay": 0,
+  "buffer_size": 1000,
+  "refit_every": 250,
+  "n_models": 5,
+  "auc_thresholds": 101,
+  "warmup": 1000,
+  "memory_every": 25,
+  "seeds": {
+    "data": 42,
+    "wrapper": 142,
+    "model": 242,
+    "router": 342,
+    "xai": 442,
+    "resource_run": 542
+  },
+  "xai": {
+    "enabled": false,
+    "adwin_enabled": true,
+    "delta": 0.002,
+    "raw_window": 400,
+    "meta_window": 500,
+    "min_meta": 50,
+    "folds": 4,
+    "permutations": 99,
+    "block_size": 20,
+    "scheduled_event": null
+  }
+}

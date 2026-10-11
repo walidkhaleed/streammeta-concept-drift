@@ -1,0 +1,9 @@
+{
+  "n_seeds": 10,
+  "resource_repeats": 3,
+  "prediction_workers": 6,
+  "resource_workers_per_measured_host": 1,
+  "primary_metric": "roc_auc_exact",
+  "auc_thresholds": 101,
+  "scientific_source_changes_require_new_gates": true
+}
